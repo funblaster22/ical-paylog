@@ -1,0 +1,4 @@
+shifts.csv
+calendar.txt
+*.xlsx
+!analysis-sample.xlsx
