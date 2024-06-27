@@ -1,4 +1,4 @@
-shifts.csv
-calendar.txt
+*.csv
 *.xlsx
+calendar.txt
 !analysis-sample.xlsx
