@@ -1,0 +1,19 @@
+[project]
+name = "ical-paylog"
+version = "0.1.0"
+description = "track & analyze job time & pay from ical"
+authors = [
+    {name = "Ethan Dawes", email = "ethand.python@gmail.com"},
+]
+dependencies = [
+    "pandas>=2.2.2",
+    "icalendar>=5.0.13",
+    "requests>=2.32.3",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false

@@ -3,7 +3,6 @@ from typing import Union
 from icalendar import Calendar
 import requests
 import pandas as pd
-from InquirerPy import inquirer
 from datetime import datetime, timezone, date
 import re
 
@@ -13,11 +12,7 @@ def get_ical_link():
         with open("calendar.txt", "r") as file:
             return file.read()
     except FileNotFoundError:
-        ical_link = inquirer.text(
-            message="Enter the iCal link:",
-            validate=lambda selection: len(selection) >= 2,
-            invalid_message="Please enter a valid link",
-        ).execute()
+        ical_link = input("Provide the iCal link with your work schedule: ")
         with open("calendar.txt", "w") as file:
             file.write(ical_link)
         return ical_link
